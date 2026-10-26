@@ -31,11 +31,6 @@ public class ListaSimple {
         int min = cabeza.precio;
         Nodo actual = cabeza.siguiente;
         while (actual != null) {
-            if (actual.precio < min) {
-                min = actual.precio;
-            }
-            actual = actual.siguiente;
-        }
-        return min;
+            
     }
 }
