@@ -27,5 +27,16 @@ public class ColaCafeteria {
         } else {
             fin.siguiente = nuevo;
             fin = nuevo;
+        }
+    }
+
+        public String desencolar() {
+        if (estaVacia()) return null;
+        String nombre = frente.nombre;
+        frente = frente.siguiente;
+        if (frente == null) {
+        
+        }
+        return nombre;
     }
 }
