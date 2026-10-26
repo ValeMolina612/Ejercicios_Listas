@@ -26,11 +26,17 @@ public class ListaSimple {
         }
     }
 
+    // Recorre la lista para encontrar y retornar el precio mínimo
     public int obtenerMinimo() {
         if (cabeza == null) return -1;
         int min = cabeza.precio;
         Nodo actual = cabeza.siguiente;
         while (actual != null) {
-            
+            if (actual.precio < min) {
+                min = actual.precio;
+            }
+            actual = actual.siguiente;
+        }
+        return min;
     }
 }
