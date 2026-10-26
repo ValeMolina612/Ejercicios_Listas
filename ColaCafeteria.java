@@ -1,8 +1,9 @@
+
 /**
  * Problema: Formados en la cafetería
  * Autor: Maria Valeria Molina Rosas
  * Grupo: GTID244
- * Fecha: 25 de octubre del 2026
+ * Fecha: 24 de octubre del 2026
  * Descripción: Estructura de Cola para manejar las operaciones en O(1)
  */
 public class ColaCafeteria {
@@ -30,13 +31,12 @@ public class ColaCafeteria {
         }
     }
 
-        public String desencolar() {
+    // Remueve y retorna el elemento del frente de la cola
+    public String desencolar() {
         if (estaVacia()) return null;
         String nombre = frente.nombre;
         frente = frente.siguiente;
         if (frente == null) {
-        
-        }
-        return nombre;
-    }
+            fin = null;
+           }
 }
