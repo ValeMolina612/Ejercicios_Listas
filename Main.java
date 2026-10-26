@@ -7,10 +7,9 @@ import java.util.StringTokenizer;
  * Problema: Formados en la cafetería
  * Autor: Maria Valeria Molina Rosas
  * Grupo: GTID244
- * Fecha: 25 de octubre del 2026
+ * Fecha: 24 de octubre del 2026
  * Descripción: Clase principal que procesa la entrada estándar y gestiona los eventos de la cafetería
  */
-
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -35,8 +34,11 @@ public class Main {
                 String nombre = st.nextToken();
                 
                 if (tipoPersona.equals("TRABAJADOR")) {
-                    colaTrabajadores.encolar(nombre);                } else if (tipoPersona.equals("ALUMNO")) {
-                    colaAlumnos.encolar(nombre);             } else if (tipoEvento.equals("ATIENDE")) {
+                    colaTrabajadores.encolar(nombre); // Llega persona a la cola de trabajadores
+                } else if (tipoPersona.equals("ALUMNO")) {
+                    colaAlumnos.encolar(nombre); // Llega persona a la cola de alumnos[cite: 1]
+                }
+            } else if (tipoEvento.equals("ATIENDE")) {
                 // Política: Se da preferencia a la gente formada en la cola de los trabajadores; 
                 // los alumnos son atendidos sólo si no hay trabajadores formados[cite: 1].
                 if (!colaTrabajadores.estaVacia()) {
