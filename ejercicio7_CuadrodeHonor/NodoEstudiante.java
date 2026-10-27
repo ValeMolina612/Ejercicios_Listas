@@ -1,12 +1,12 @@
 /**
  * - Problema: Cuadro de Honor Ordenado Alfabéticamente
  * - Autor: Maria Valeria Molina Rosas
- * - Grupo: GID244
+ * - Grupo: GIDS
  * - Fecha: 26/10/2026
  * - Descripción: Representa un nodo individual que almacena el nombre del alumno, 
  *   su promedio y el puntero hacia el siguiente nodo en la lista enlazada simple.
  */
-public class Nodo {
+public class NodoEstudiante {
     String nombreEstudiante;
     double promedioEstudiante;
     NodoEstudiante siguiente;
