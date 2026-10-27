@@ -2,12 +2,12 @@ import java.util.Scanner;
 import java.util.Locale;
 
 /**
- * - Problema: Ticket de Compras Ordenado
+ * - Problema: Cuadro de Honor Ordenado Alfabéticamente
  * - Autor: Maria Valeria Molina Rosas
  * - Grupo: GTID244
  * - Fecha: 26/10/2026
  * - Descripción: Clase principal que gestiona la lectura de datos de entrada desde consola,
- *   los procesa mediante la lista enlazada y genera la salida compatible con omegaUp.
+ *   aplica el filtro de promedio >= 9.5 y genera la salida ordenada requerida por omegaUp.
  */
 public class Main {
     /**
@@ -23,17 +23,24 @@ public class Main {
         }
         
         int n = scanner.nextInt();
-        ListaSimple listaCompras = new ListaSimple();
+        scanner.nextLine(); // Consumir el salto de línea pendiente después del entero N
         
-        // Lectura de los N productos y almacenamiento ordenado
+        ListaEstudiantesHonor cuadroHonor = new ListaEstudiantesHonor();
+        
+        // Lectura de los N registros (cada uno ocupa 2 líneas: nombre y promedio)
         for (int i = 0; i < n; i++) {
-            String nombre = scanner.next();
-            double precio = scanner.nextDouble();
-            listaCompras.insertarOrdenado(nombre, precio);
+            String nombre = scanner.nextLine();
+            double promedio = scanner.nextDouble();
+            scanner.nextLine(); // Consumir el salto de línea pendiente después del double
+            
+            // Filtro: Solo ingresan los alumnos con promedio de 9.5 o más
+            if (promedio >= 9.5) {
+                cuadroHonor.insertarAlfabeticamente(nombre, promedio);
+            }
         }
         
-        // Impresión del resultado final en formato de ticket
-        listaCompras.imprimirTicket();
+        // Impresión del resultado final del cuadro de honor ordenado
+        cuadroHonor.imprimirCuadroHonor();
         
         scanner.close();
     }
