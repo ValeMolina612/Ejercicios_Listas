@@ -6,7 +6,7 @@
  * - Descripción: Representa un nodo individual que almacena el nombre del alumno, 
  *   su promedio y el puntero hacia el siguiente nodo en la lista enlazada simple.
  */
-public class NodoEstudiante {
+public class Nodo {
     String nombreEstudiante;
     double promedioEstudiante;
     NodoEstudiante siguiente;
