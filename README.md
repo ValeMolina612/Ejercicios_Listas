@@ -44,23 +44,7 @@ cd ejercicio3_ComprandoAgua
 javac *.java
 java Main
 
-El programa lee la entrada que pide el problema correspondiente desde el teclado. También se puede usar un archivo de entrada con: java Main < entrada.txt
 
-Nota sobre omegaUp
-Para enviar una solución a omegaUp se junta todo el código en un solo archivo Main.java, con las clases auxiliares sin la palabra public y la clase Main al final como única pública. En ese envío no se muestran mensajes de ayuda ni textos extra, solo la salida que pide el problema.
-
-Antes de subirlo, revisa tres cosas:
-
-Ejercicio 1: el README dice que compila, pero tu ejercicio 1 todavía tiene la clase Nodo duplicada. Quita la copia que está dentro de ColaCafeteria.java.
-Qué quité del ejemplo: tu código no tiene casos de prueba por defecto, ni MODO_OMEGAUP, ni ListaDoble, ni ejercicios 2, 4, 6 y 8. Por eso no los incluí. Tampoco copié la frase sobre los empates en el ejercicio 5. En tu código, si dos productos cuestan lo mismo, el nuevo queda después del que ya estaba, al revés que en el ejemplo.
-Materia: puse “Estructuras de datos” porque así dice el ejemplo. Cámbiala si tu materia se llama distinto.
-
-Sigo sin hacer commit ni push. Los cambios pendientes son los mismos de antes y venían en tu zip, no los hice yo. Son el ListaSimple.java borrado en la raíz del repo y los .class sin seguimiento. En esta última ronda no toqué ningún archivo del repositorio, solo te escribí el texto del README en el chat. Además, el remoto es tu GitHub (ValeMolina612/Ejercicios_Listas) y no me pediste subir nada.
-
-Para subirlo tú, haz esto en tu computadora:
-
-Pega el texto en README.md en la raíz del repo.
-Corrige el Nodo duplicado del ejercicio 1.
 Ejecuta:
 bash
    git add README.md ejercicio1_FormadosEnLaCafeteria
