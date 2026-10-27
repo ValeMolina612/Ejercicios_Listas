@@ -30,3 +30,39 @@ Ejercicio 5: Supermercado. Se arma un ticket con los productos ordenados de mayo
 
 
 Ejercicio 7: Cuadro de Honor. Se muestra, en orden alfabético, el nombre de los alumnos con promedio de 9.5 o más. Se usa lista simple ordenada alfabéticamente: solo se insertan los alumnos que cumplen el promedio y cada nombre se coloca directamente en su posición. Carpeta: ejercicio7_CuadrodeHonor.
+
+Estructura del repositorio
+En la raíz está este archivo README.md y una carpeta por cada ejercicio, con el nombre indicado arriba en cada descripción. Las carpetas de los ejercicios 1, 3 y 5 contienen Nodo.java, una clase de lista (ColaCafeteria.java en el ejercicio 1 y ListaSimple.java en los ejercicios 3 y 5) y Main.java. La carpeta del ejercicio 7 contiene NodoEstudiante.java, ListaEstudiantesHonor.java y Main.java.
+
+Cómo compilar y ejecutar
+Se necesita tener instalado el JDK de Java, de forma que los comandos javac y java funcionen en la terminal.
+
+Para probar un ejercicio, se entra a su carpeta desde la terminal, se compilan todos los archivos .java con javac y se ejecuta la clase Main con java. Para probar otro ejercicio solo se cambia de carpeta.
+
+Ejemplo:
+cd ejercicio3_ComprandoAgua
+javac *.java
+java Main
+
+El programa lee la entrada que pide el problema correspondiente desde el teclado. También se puede usar un archivo de entrada con: java Main < entrada.txt
+
+Nota sobre omegaUp
+Para enviar una solución a omegaUp se junta todo el código en un solo archivo Main.java, con las clases auxiliares sin la palabra public y la clase Main al final como única pública. En ese envío no se muestran mensajes de ayuda ni textos extra, solo la salida que pide el problema.
+
+Antes de subirlo, revisa tres cosas:
+
+Ejercicio 1: el README dice que compila, pero tu ejercicio 1 todavía tiene la clase Nodo duplicada. Quita la copia que está dentro de ColaCafeteria.java.
+Qué quité del ejemplo: tu código no tiene casos de prueba por defecto, ni MODO_OMEGAUP, ni ListaDoble, ni ejercicios 2, 4, 6 y 8. Por eso no los incluí. Tampoco copié la frase sobre los empates en el ejercicio 5. En tu código, si dos productos cuestan lo mismo, el nuevo queda después del que ya estaba, al revés que en el ejemplo.
+Materia: puse “Estructuras de datos” porque así dice el ejemplo. Cámbiala si tu materia se llama distinto.
+
+Sigo sin hacer commit ni push. Los cambios pendientes son los mismos de antes y venían en tu zip, no los hice yo. Son el ListaSimple.java borrado en la raíz del repo y los .class sin seguimiento. En esta última ronda no toqué ningún archivo del repositorio, solo te escribí el texto del README en el chat. Además, el remoto es tu GitHub (ValeMolina612/Ejercicios_Listas) y no me pediste subir nada.
+
+Para subirlo tú, haz esto en tu computadora:
+
+Pega el texto en README.md en la raíz del repo.
+Corrige el Nodo duplicado del ejercicio 1.
+Ejecuta:
+bash
+   git add README.md ejercicio1_FormadosEnLaCafeteria
+   git commit -m "Agrega README y corrige ejercicio 1"
+   git push origin feature/listas-java
