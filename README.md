@@ -45,7 +45,15 @@ javac *.java
 java Main
 
 
-<img width="1307" height="195" alt="Captura de pantalla 2026-10-26 201329" src="https://github.com/user-attachments/assets/f34df804-dcd9-47c6-ac0e-af92c95cf51b" />
-<img width="1490" height="226" alt="Captura de pantalla 2026-10-26 201514" src="https://github.com/user-attachments/assets/a2c9abc9-47ef-4a5e-b5de-b940e87cabf5" />
+EJERCICIO 1
+<img width="1198" height="152" alt="Captura de pantalla 2026-10-25 220026" src="https://github.com/user-attachments/assets/fe85c02c-c9cd-4055-bf40-4514ceb6a561" />
+
+EJERCICIO 3
+<img width="765" height="160" alt="Captura de pantalla 2026-10-25 230826" src="https://github.com/user-attachments/assets/26c90092-c5e2-45c7-947a-ecebef063816" />
+
+EJERCICIO 5
 <img width="1282" height="186" alt="Captura de pantalla 2026-10-26 203057" src="https://github.com/user-attachments/assets/e5f30247-58c5-4376-bb87-553ca24dc12e" />
+
+EJERCICIO 7
+
 
