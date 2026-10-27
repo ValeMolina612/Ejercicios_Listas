@@ -45,8 +45,4 @@ javac *.java
 java Main
 
 
-Ejecuta:
-bash
-   git add README.md ejercicio1_FormadosEnLaCafeteria
-   git commit -m "Agrega README y corrige ejercicio 1"
-   git push origin feature/listas-java
+
