@@ -52,8 +52,8 @@ EJERCICIO 3
 <img width="765" height="160" alt="Captura de pantalla 2026-10-25 230826" src="https://github.com/user-attachments/assets/26c90092-c5e2-45c7-947a-ecebef063816" />
 
 EJERCICIO 5
-<img width="1282" height="186" alt="Captura de pantalla 2026-10-26 203057" src="https://github.com/user-attachments/assets/e5f30247-58c5-4376-bb87-553ca24dc12e" />
+<img width="1307" height="200" alt="Captura de pantalla 2026-10-26 213018" src="https://github.com/user-attachments/assets/3a3266ba-a76f-4144-b8e6-ea6ebac6efab" />
 
 EJERCICIO 7
-
+<img width="1282" height="186" alt="Captura de pantalla 2026-10-26 203057" src="https://github.com/user-attachments/assets/e5f30247-58c5-4376-bb87-553ca24dc12e" />
 
