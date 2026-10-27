@@ -1,24 +1,24 @@
 /**
- * - Problema: Ticket de Compras Ordenado
+ * - Problema: Cuadro de Honor Ordenado Alfabéticamente
  * - Autor: Maria Valeria Molina Rosas
- * - Grupo: GTID244
+ * - Grupo: GID244
  * - Fecha: 26/10/2026
- * - Descripción: Representa un nodo individual que almacena el nombre, el precio 
- *   del producto y el puntero hacia el siguiente nodo en la lista simple.
+ * - Descripción: Representa un nodo individual que almacena el nombre del alumno, 
+ *   su promedio y el puntero hacia el siguiente nodo en la lista enlazada simple.
  */
-public class Nodo {
-    String nombreProducto;
-    double precioProducto;
-    Nodo siguiente;
+public class NodoEstudiante {
+    String nombreEstudiante;
+    double promedioEstudiante;
+    NodoEstudiante siguiente;
 
     /**
-     * Constructor para inicializar el nodo con un producto, su precio y su puntero en nulo.
-     * @param nombre Nombre del producto recibido por la entrada.
-     * @param precio Precio del producto recibido por la entrada.
+     * Constructor para inicializar el nodo con el nombre y promedio del alumno.
+     * @param nombre Nombre completo del estudiante.
+     * @param promedio Promedio académico del estudiante.
      */
-    public Nodo(String nombre, double precio) {
-        this.nombreProducto = nombre;
-        this.precioProducto = precio;
+    public NodoEstudiante(String nombre, double promedio) {
+        this.nombreEstudiante = nombre;
+        this.promedioEstudiante = promedio;
         this.siguiente = null;
     }
 }
